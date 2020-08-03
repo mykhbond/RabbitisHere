@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content {
+    background-color: yellow;
+    width: 70%;
+    margin: 0 auto;
+    height: calc(100% - 50px - 100px);
+}
+
+nav {
+    color: white;
+    background-color: red;
+    height: 100px;
+    text-align: center;
+}
+
+footer {
+    background-color: green;
+    color: white;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.content-inner {
+    position: absolute;
+    left: -170px;
+
+    animation-name: run;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.content img {
+    height: 100px;
+}
+
+
+@keyframes run {
+    from {
+        left: -170px;
+        /*transform: rotate(0deg);*/
+        border: 10px solid greenyellow;
+    }
+    to {
+        border: 10px solid darkgreen;
+        /*transform: rotate(720deg);*/
+        left: 100%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    @keyframes run {
+        0% {
+            left: 100%;
+            transform: rotate(0deg);
+            top: 140px;
+        }
+        25% {
+            transform: rotate(20deg);
+            top: 150px;
+        }
+
+        50% {
+            transform: rotate(0deg);
+            top: 140px;
+        }
+        75% {
+            transform: rotate(20deg);
+            top: 150px;
+        }
+        100% {
+            left: -170px;
+            transform: rotate(0deg);
+            top: 140px;
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 800px) {
+    @keyframes run {
+        0% {
+            left: -170px;
+            transform: rotate(0deg) scaleX(-1);
+            top: 140px;
+        }
+        25% {
+            transform: rotate(20deg) scaleX(-1);
+            top: 150px;
+        }
+
+        50% {
+            transform: rotate(0deg) scaleX(-1);
+            top: 140px;
+
+        }
+        75% {
+            transform: rotate(20deg) scaleX(-1);
+            top: 150px;
+        }
+        100% {
+            left: 100%;
+            transform: rotate(0deg) scaleX(-1);
+            top: 140px;
+        }
+    }
+
+}
+
