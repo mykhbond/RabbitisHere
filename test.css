@@ -13,7 +13,6 @@ body {
     width: 70%;
     margin: 0 auto;
     height: calc(100% - 50px - 100px);
-    /*overflow: hidden;*/
 }
 
 nav {
@@ -27,7 +26,7 @@ nav {
 .icon-rabbit {
     border: 1px solid orange;
     display: inline-block;
-    margin-top: 20px;
+    margin: 20px 0 ;
 }
 
 .icon-rabbit:hover {
@@ -37,7 +36,6 @@ nav {
 .icon-rabbit img {
     height: 60px;
     vertical-align: bottom;
-    /*margin: 20px;*/
 }
 
 .icon-rabbit span {
