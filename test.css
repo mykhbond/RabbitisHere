@@ -13,13 +13,46 @@ body {
     width: 70%;
     margin: 0 auto;
     height: calc(100% - 50px - 100px);
+    /*overflow: hidden;*/
 }
 
 nav {
     color: white;
-    background-color: red;
+    background-color: #c2c2c2;
     height: 100px;
     text-align: center;
+    border: 3px solid red;
+}
+
+.icon-rabbit {
+    border: 1px solid orange;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.icon-rabbit:hover {
+    background-color: orange;
+}
+
+.icon-rabbit img {
+    height: 60px;
+    vertical-align: bottom;
+    /*margin: 20px;*/
+}
+
+.icon-rabbit span {
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.select {
+    position: relative;
+    border: 1px solid orange;
+    display: inline-block;
+    margin: 20px 0;
+    height: 60px;
+    vertical-align:middle;
+    line-height: 60px;
 }
 
 footer {
@@ -36,7 +69,7 @@ footer {
 
     animation-name: run;
     animation-delay: 1s;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -67,9 +100,10 @@ footer {
             left: 100%;
             transform: rotate(0deg);
             top: 140px;
+            /*color: red;*/
         }
         25% {
-            transform: rotate(20deg);
+            transform: rotate(70deg);
             top: 150px;
         }
 
