@@ -1,11 +1,16 @@
+/* google font*/
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Lemonada', cursive;
 }
 
 body {
     height: 100vh;
     overflow: hidden;
+
 }
 
 .content {
@@ -18,19 +23,22 @@ body {
 nav {
     color: white;
     background-color: #c2c2c2;
-    height: 100px;
+    height: 64px;
     text-align: center;
     border: 3px solid red;
+    width: 100%;
+
 }
 
 .icon-rabbit {
     border: 1px solid orange;
     display: inline-block;
-    margin: 20px;
+    background-color: orange;
+    border-radius: 10px;
 }
 
 .icon-rabbit:hover {
-    background-color: orange;
+    background-color: blue;
 }
 
 .icon-rabbit img {
@@ -39,18 +47,22 @@ nav {
 }
 
 .icon-rabbit span {
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 50px;
 }
 
 .select {
     position: relative;
     border: 1px solid orange;
     display: inline-block;
-    margin: 20px 0;
-    height: 60px;
-    vertical-align:top;
+    height: 63px;
+    width: 180px;
+    vertical-align: top;
     line-height: 60px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    /*text-align: center;*/
 }
 
 footer {
@@ -81,18 +93,36 @@ footer {
 @keyframes run {
     from {
         left: -170px;
-        /*transform: rotate(0deg);*/
+
         border: 10px solid greenyellow;
     }
     to {
         border: 10px solid darkgreen;
-        /*transform: rotate(720deg);*/
+
         left: 100%;
     }
 }
 
-
+/* state 2*/
 @media screen and (max-width: 800px) {
+    body {
+        background-color: green;
+    }
+
+    .icon-rabbit img {
+        margin: 0;
+    }
+    .icon-rabbit span {
+        font-size: 0px;
+    }
+    .select{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+
+
     @keyframes run {
         0% {
             left: 100%;
@@ -120,10 +150,17 @@ footer {
         }
     }
 
-
 }
 
+/* state 1*/
 @media screen and (min-width: 800px) {
+    body {
+        background-color: red;
+    }
+    .select{
+        /*background-color: orange;*/
+    }
+
     @keyframes run {
         0% {
             left: -170px;

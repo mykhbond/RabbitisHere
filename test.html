@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="test.css">
+
 </head>
 <body>
 <nav>
-    <label class="icon-rabbit">
+    <label id="orangeB" class="icon-rabbit">
         <img src="rab.png">
-        <span>RUN</span>
+        <span id="orangeT">RUN</span>
     </label>
 
-    <select name="" class="select">
-        <option value="">state1</option>
-        <option value="">state2</option>
+    <select name="" class="select" id="select" onchange="getSelectValue()">
+
+        <option selected value="1">state 1</option>
+        <option value="2">state 2</option>
 
     </select>
 
@@ -24,5 +26,6 @@
     <img class="content-inner" src="rab.png">
 </div>
 <footer>Footer content</footer>
+<script type="text/javascript" src="RabbitisHere.js"></script>
 </body>
 </html>
